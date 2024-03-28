@@ -14,9 +14,9 @@ To commence with the Weather App:
 2. Open the project using your preferred code editor.
 3. Execute the application to access instant weather updates for the specified locations.
 
-## License
-This project is licensed under the MIT License. For more information, refer to the [LICENSE](LICENSE) file.
-
 ## Notes
-- Weather data is sourced from a reliable weather API.
+- Weather data is sourced from a reliable weather API. All API calls are routed through a server for enhanced security and efficiency.
 - Contributions to the project are highly encouraged via pull requests or issue submissions.
+
+## License
+This project is licensed under the MIT License. For more information, refer to the `LICENSE` file.
