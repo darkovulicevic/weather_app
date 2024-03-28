@@ -1,0 +1,26 @@
+<div class="weather-widget">
+    <div class="weather-header">
+        <h2>{{ ui.data && ui.data.name }}</h2>
+        <p>{{ ui.data && ui.data.weather && ui.data.weather[0] && ui.data.weather[0].description }}</p>
+    </div>
+    <div class="weather-details">
+        <div class="temperature">
+            <p>{{ ui.data && ui.data.main && ui.h.ceil(ui.data.main.temp) }}&deg;C</p>
+            <p>Feels like {{ ui.data && ui.data.main && ui.h.ceil(ui.data.main.feels_like) }}&deg;C</p>
+        </div>
+        <div class="weather-icon">
+            <img src="https://openweathermap.org/img/w/{{ ui.data && ui.data.weather && ui.data.weather[0] && ui.data.weather[0].icon }}.png"
+                alt="Weather Icon">
+        </div>
+    </div>
+    <div class="extra-details">
+        <div class="detail">
+            <p>Humidity</p>
+            <p>{{ ui.data && ui.data.main && ui.data.main.humidity }}%</p>
+        </div>
+        <div class="detail">
+            <p>Wind Speed</p>
+            <p>{{ ui.data && ui.data.wind && ui.h.ceil(ui.data.wind.speed) }} m/s</p>
+        </div>
+    </div>
+</div>
